@@ -9,6 +9,11 @@
 font-size: 7em !important;
 }
 
+.hr-overview{
+margin-top: -30px;
+border-top: 3px solid #FEC503;
+}
+
 .intro-description{
     margin-top: 65px;
 margin-bottom: 20px;
@@ -34,9 +39,9 @@ box-sizing: border-box;
 
 .button {
 color: white;
-background: #fed136;
+background: #FEC503;
 height: 58px;
-border: 2px solid #fed136;
+border: 2px solid #FEC503;
 font: 500 22px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 padding: 0 21px;
 -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
@@ -91,7 +96,7 @@ body {
 }
 
 .text-primary {
-    color: #fed136;
+    color: #FEC503;
 }
 
 p {
@@ -112,7 +117,7 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #FEC503;
 }
 
 a:hover,
@@ -146,12 +151,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #fed136;
+    border-color: #FEC503;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #FEC503;
 }
 
 .btn-primary:hover,
@@ -185,25 +190,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #FEC503;
+    background-color: #FEC503;
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: #FEC503;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #fed136;
+    border-color: #FEC503;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #FEC503;
 }
 
 .btn-xl:hover,
@@ -237,12 +242,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #FEC503;
+    background-color: #FEC503;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #FEC503;
     background-color: #fff;
 }
 
@@ -253,7 +258,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
-    color: #fed136;
+    color: #FEC503;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -268,8 +273,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #FEC503;
+    background-color: #FEC503;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -278,7 +283,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #FEC503;
 }
 
 .navbar-default .nav li a {
@@ -292,13 +297,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #FEC503;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: #FEC503;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -518,7 +523,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #FEC503;
 }
 
 .timeline>li {
@@ -566,11 +571,11 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #FEC503;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #FEC503;
 }
 
 .timeline>li .timeline-image h4 {
@@ -711,7 +716,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fed136;
+    border: 7px solid #FEC503;
 }
 
 .team-member h4 {
@@ -757,7 +762,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #FEC503;
     box-shadow: none;
 }
 
@@ -835,7 +840,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #FEC503;
 }
 
 .btn:focus,
@@ -923,12 +928,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136;
+    background: #FEC503;
 }
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #FEC503;
 }
 
 img::selection {
@@ -940,5 +945,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #FEC503;
 }
