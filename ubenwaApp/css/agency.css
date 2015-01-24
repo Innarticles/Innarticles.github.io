@@ -9,6 +9,39 @@
 font-size: 7em !important;
 }
 
+.relative-iphone{
+    position: relative;
+}
+.overlay, .infoi{
+  position: absolute;
+left: 50%;
+ /* width: 100%;
+  height: 100%;*/
+  
+  /*background-color: rgba(0,0,0,0.5); /*dim the background*/*/
+}
+
+.infoi{
+    z-index: 10;
+    top: 189px;
+left: 310px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hr-overview{
 margin-top: -30px;
 border-top: 3px solid #FEC503;
