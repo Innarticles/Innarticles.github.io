@@ -16,10 +16,13 @@
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
-    <!-- slider -->
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <script src="js/jquery.flexslider.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    
     <script src="js/bootstrap.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!-- Place in the <head>, after the three links -->
 
 
@@ -27,9 +30,9 @@
 
     $(document).ready(function(){
 
-     $("#myCarousel").carousel();
+       $("#myCarousel").carousel();
 
- });
+   });
 
     </script>
 
@@ -115,7 +118,7 @@
                 </div>
                 <div class="col-md-6 relative-iphone">
                     <div class="center1">
-                     <div class="intro-text center overlay">
+                       <div class="intro-text center overlay">
                         <img src="img/iphone.png">
 
                     </div>
@@ -160,15 +163,15 @@
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4 wow bounceInLeft">
                 <span class="fa-stack fa-4x">
-                   <img src="img/about/the_challenge.png" class="img-responsive" alt="">
-               </span>
-               <hr class="hr-overview"></hr>
-               <h4 class="service-heading">The Challenge</h4>
-               <p class="text-muted"> Birth Asphyxia is one of the top 3 causes of infant mortality in Africa, causing the death of about 1.2 million infants and severe life-long disabilities (such as cerebral palsy, deafness, and paralysis) to an equal number annually. "If newborns who have asphyxia can be detected early enough, we may be able to save their lives" - UN.</p>
-           </div>
-           <div class="col-md-4">
+                 <img src="img/about/the_challenge.png" class="img-responsive" alt="">
+             </span>
+             <hr class="hr-overview"></hr>
+             <h4 class="service-heading">The Challenge</h4>
+             <p class="text-muted"> Birth Asphyxia is one of the top 3 causes of infant mortality in Africa, causing the death of about 1.2 million infants and severe life-long disabilities (such as cerebral palsy, deafness, and paralysis) to an equal number annually. "If newborns who have asphyxia can be detected early enough, we may be able to save their lives" - UN.</p>
+         </div>
+         <div class="col-md-4 wow bounceInLeft">
             <span class="fa-stack fa-4x">
                 <img src="img/about/what_we_are_doing.png" class="img-responsive" alt="">
             </span>
@@ -176,7 +179,7 @@
             <h4 class="service-heading">What we are doing</h4>
             <p class="text-muted">We applied machine learning to develop an intelligent system that can take as input the infant cry, analyse the frequency patterns in the cry and provide an instant diagnosis of birth asphyxia. The test results from our diagnostic software have shown a Sensitivity of 100% and Specificity of 88%.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 wow bounceInRight">
             <span class="fa-stack fa-4x">
                 <img src="img/about/what_we_have_achieved.png" class="img-responsive" alt="">
             </span>
@@ -298,7 +301,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
-                        <li>
+                        <li class="wow slideInLeft">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/ieeebanner.jpg" alt="">
                             </div>
@@ -312,7 +315,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
+                        <li class="timeline-inverted wow slideInRight">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/tech4dev.jpg" alt="">
                             </div>
@@ -327,7 +330,7 @@
                             </div>
                         </li>
                         
-                        <li>
+                        <li class="wow slideInLeft">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
                             </div>
@@ -341,7 +344,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
+                        <li class="timeline-inverted wow shake">
                             <div class="timeline-image">
                                 <h4>Be Part
                                     <br>Of Our
@@ -371,7 +374,7 @@
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                <li><a href="https://www.facebook.com/kevin.ekwenwa"><i class="fa fa-facebook"></i></a>
                                 </li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a>
                                 </li>
@@ -406,7 +409,7 @@
                                 </li>
                                 <li><a href="https://www.facebook.com/udeogu.innocent.k"><i class="fa fa-facebook"></i></a>
                                 </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                <li><a href="https://www.linkedin.com/in/innocentudeogu"><i class="fa fa-linkedin"></i></a>
                                 </li>
                             </ul>
                             <p>An Entrepreneur-In-Training at the prestigious Meltwater Entrepreneurial School of Technology (MEST), Innocent has a passion for technology and entrepreneurship. He is founder of Biograde Technologies, and a developer on the Ubenwa project.</p>
