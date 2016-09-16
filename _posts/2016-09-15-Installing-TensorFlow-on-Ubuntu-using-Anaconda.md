@@ -7,7 +7,7 @@ title: Installing TensorFlow on Ubuntu using Anaconda!
 - Ubuntu 14.04 
 - I had Anaconda already installed before now.
 
-```
+```shell
 $ conda create -n tensorflow python=2.7
 $ source activate tensorflow
 $ # Ubuntu/Linux 64-bit, CPU only, Python 2.7
@@ -28,3 +28,4 @@ Hello, TensorFlow!
 >>> b = tf.constant(32)
 >>> print(sess.run(a + b))
 42
+```
