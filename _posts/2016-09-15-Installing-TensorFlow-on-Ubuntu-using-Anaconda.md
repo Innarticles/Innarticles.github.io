@@ -6,6 +6,7 @@ title: Installing TensorFlow on Ubuntu using Anaconda!
 ### Set of commands that worked for me
 - Ubuntu 14.04 
 - I had Anaconda already installed before now.
+
 ```
 $ conda create -n tensorflow python=2.7
 $ source activate tensorflow
