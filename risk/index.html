@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base href="">
+    <script type="text/javascript">
+(function() {
+  var workerId = 'assets';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <!-- <script type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.1.0];htmlwidgets[1.2];leaflet[0.7.7];leafletfix[1.0.0];leaflet-label[0.2.2];Proj4Leaflet[0.7.2];leaflet-binding[1.1.0];selectize[0.11.2];bootstrap[3.3.7]</script> -->
+<script src="assets/shared/json2-min.js"></script>
+<script src="assets/shared/jquery.min.js"></script>
+<script src="assets/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="assets/leaflet-0.7.7/leaflet.css" rel="stylesheet" />
+<script src="assets/leaflet-0.7.7/leaflet.js"></script>
+<link href="assets/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="assets/leaflet-label-0.2.2/leaflet.label.css" rel="stylesheet" />
+<script src="assets/leaflet-label-0.2.2/leaflet.label.js"></script>
+<script src="assets/Proj4Leaflet-0.7.2/proj4-compressed.js"></script>
+<script src="assets/Proj4Leaflet-0.7.2/proj4leaflet.js"></script>
+<script src="assets/leaflet-binding-1.1.0/leaflet.js"></script>
+<link href="assets/shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="shared/selectize/js/es5-shim.min.js"></script>
+<![endif]-->
+<script src="assets/shared/selectize/js/selectize.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="assets/shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<script src="assets/shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/shared/bootstrap/shim/html5shiv.min.js"></script>
+<script src="assets/shared/bootstrap/shim/respond.min.js"></script>  <title>RiskTracker</title>
+  <link rel="stylesheet" type="text/css" href="assets/shinythemes/css/paper.min.css"/>
+
+
+</head>
+
+<body>
+
+  <style type="text/css">
+
+          .main_map_div{
+          overflow: hidden;
+          position: relative;
+      }
+
+      .map_wrapper {
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+  }
+
+
+  .HzV7m-b7CEbf .jQhVs-haAclf {
+      position: relative;
+      height: 100%;
+      width: 408px;
+  }
+
+    .jQhVs-haAclf {
+      float: left;
+  }
+
+  .main_pam {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgb(229, 227, 223);
+  }
+
+
+
+
+  #controls {
+background-color: white;
+padding: 0 20px 20px 20px;
+cursor: move;
+
+opacity: 0.50;
+transition: opacity 500ms 100ms;
+
+border-radius: 15px 15px;
+}
+
+#controls:hover {
+opacity: 0.95;
+transition-delay: 0;
+}
+
+#abs_alert {
+background-color: #bf4040;
+padding: 0 20px 20px 20px;
+cursor: move;
+
+opacity: 0.80;
+transition: opacity 500ms 100ms;
+
+border-radius: 15px 15px;
+}
+
+#abs_alert:hover {
+opacity: 0.95;
+transition-delay: 0;
+}
+
+
+#abs_low_risk {
+background-color: white;
+padding: 0 20px 20px 20px;
+cursor: move;
+
+opacity: 0.80;
+transition: opacity 500ms 100ms;
+
+border-radius: 15px 15px;
+}
+
+#abs_low_risk:hover {
+opacity: 0.95;
+transition-delay: 0;
+}
+
+#abs_risk_issues {
+background-color: white;
+padding: 0 20px 20px 20px;
+cursor: move;
+
+opacity: 0.80;
+transition: opacity 500ms 100ms;
+
+border-radius: 15px 15px;
+}
+
+#abs_risk_issues:hover {
+opacity: 0.95;
+transition-delay: 0;
+}
+
+#abs_raw_table {
+background-color: white;
+padding: 0 20px 20px 20px;
+cursor: move;
+
+opacity: 0.80;
+transition: opacity 500ms 100ms;
+
+border-radius: 15px 15px;
+}
+
+#abs_raw_table:hover {
+opacity: 0.95;
+transition-delay: 0;
+}
+
+p{
+  color: black;
+}
+
+h3{
+  color: black;
+}
+
+h4{
+  color: black;
+}
+
+h5{
+  color: black;
+}
+
+
+  .map-wrapper {
+    position: relative;
+    height: calc(100vh);
+    min-height: 900px;
+  }
+
+  #indo_map{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+</style>
+  <style type="text/css">html, body {width:100%;height:100%; margin:0px; padding: 0px;}</style>
+
+  <div class="map-wrapper">
+      <div id="indo_map">
+        </div>
+  </div>
+
+
+  <!-- <div style="overflow: hidden; position: relative;">
+  <div style="height: 600px;position: relative;overflow: hidden;">
+    <div id="indo_map" style="height: 100%;width: 100%;position: absolute;top: 0px;left: 0px;background-color: rgb(229, 227, 223); " class="">
+    </div>
+  </div>
+  </div> -->
+ <div style="top:2%;left:80%;right:2%;position:absolute;cursor:inherit;" id="controls" background="white">
+    <div align="center">
+      <img src="assets/logo_1.jpg" align="center"/>
+      <h5 style="color: gray">RiskTracker</h5>
+    </div>
+    <br/>
+    <div id="inp_unit" class="form-group shiny-input-radiogroup shiny-input-container">
+      <label class="control-label" for="inp_unit">Political Unit</label>
+      <div class="shiny-options-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_unit" value="0"/>
+            <span>Country</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_unit" value="1" checked="checked"/>
+            <span>Province</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_unit" value="2"/>
+            <span>Regency</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="inp_query" class="form-group shiny-input-radiogroup shiny-input-container">
+      <label class="control-label" for="inp_query">Query</label>
+      <div class="shiny-options-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_query" value="1" checked="checked"/>
+            <span>Supplies</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_query" value="2"/>
+            <span>Physical assets</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_query" value="3"/>
+            <span>All Queries</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="div_ho_icons" class="shinyjs-hide">
+      <div id="inp_ho_icons" class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-container-inline">
+        <div class="shiny-options-group">
+          <label class="checkbox-inline">
+            <input type="checkbox" name="inp_ho_icons" value="Hotels" checked="checked"/>
+            <span>Hotels</span>
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="inp_ho_icons" value="Offices" checked="checked"/>
+            <span>Offices</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="div_supp_icons" class="shinyjs-hide">
+      <div id="inp_supp_icons" class="form-group shiny-input-checkboxgroup shiny-input-container shiny-input-container-inline">
+        <div class="shiny-options-group">
+          <label class="checkbox-inline">
+            <input type="checkbox" name="inp_supp_icons" value="Perish" checked="checked"/>
+            <span>Perish</span>
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="inp_supp_icons" value="Essential" checked="checked"/>
+            <span>Essential</span>
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="inp_supp_icons" value="No Perish and No Essential"/>
+            <span>Not Essential</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group shiny-input-container">
+      <label class="control-label" for="inp_time">Time</label>
+      <div>
+        <select id="inp_time"><option value="1" selected>Current</option>
+<option value="2">Jan 2018</option>
+<option value="3">Feb 2018</option>
+<option value="4">2019 Forecast</option></select>
+        <script type="application/json" data-for="inp_time" data-nonempty="">{}</script>
+      </div>
+    </div>
+    <div class="form-group shiny-input-container">
+      <div class="checkbox">
+        <label>
+          <input id="inp_time_graphs" type="checkbox"/>
+          <span>Time graphs</span>
+        </label>
+      </div>
+    </div>
+    <div id="inp_more_info" class="form-group shiny-input-radiogroup shiny-input-container">
+      <label class="control-label" for="inp_more_info">More Info</label>
+      <div class="shiny-options-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_more_info" value="0" checked="checked"/>
+            <span>None</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_more_info" value="1"/>
+            <span>Lowest risk</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_more_info" value="2"/>
+            <span>Highest risk</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="inp_more_info" value="3"/>
+            <span>Risk Issues</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group shiny-input-container">
+      <div class="checkbox">
+        <label>
+          <input id="inp_raw_data_table" type="checkbox"/>
+          <span>Show data table</span>
+        </label>
+      </div>
+    </div>
+    <div class="form-group shiny-input-container">
+      <div class="checkbox">
+        <label>
+          <input id="inp_legend" type="checkbox"/>
+          <span>Show legend</span>
+        </label>
+      </div>
+    </div>
+    <div id="map_color_pal" class="shiny-html-output"></div>
+  </div> 
+
+</body>
+<script>
+    $(document).ready(function () {
+      // $("<link/>", {
+      //     rel: "stylesheet",
+      //     type: "text/css",
+      //     href: "/__static__/frontend/css/shinyapps.css"
+      // }).appendTo("head");
+      var bounds = new L.LatLngBounds([[-2, 112], [19, 33]], 13);
+      var mymap = L.map('indo_map')
+      // var mymap = L.map('indo_map').setView([51.505, -0.09], 13);
+      mymap.fitBounds(bounds);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaW5uYXJ0aWNsZXMiLCJhIjoiY2puNXA0dmowNXBzbjNwbnhoN3UxMnRxMyJ9.D7Hsyt3Gh8MGXNPn7pX5hA', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery ÔøΩ <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+      }).addTo(mymap);
+
+
+  });
+</script>
+</html>
