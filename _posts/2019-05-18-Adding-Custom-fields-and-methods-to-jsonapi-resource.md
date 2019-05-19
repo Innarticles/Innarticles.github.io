@@ -3,9 +3,9 @@ layout: post
 title: Adding Custom fields and methods to jsonapi resources
 ---
 ### The problem
-Recently, I have attempted to completely switch to [www.jsonapi.org](JsonAPI) specification for all my API-only rails projects. 
-To achieve these with ease, I use [www.github.com/cerebris/jsonapi-resources](Jsonapi resources gem). This gem is very handy to use and get's you configured for JsonAPI specs in to time. But sometimes, its not clear how to do what you would normally easily do if you are not using the tool. 
-One of those issue is image uploads or adding more custom fields to the json objects from the ActiveRecords being serialized. I will show you my solution to the later challenge. 
+Recently, I have attempted to completely switch to [JsonAPI](www.jsonapi.org) specification for all my API-only rails projects. 
+To achieve these with ease, I use [Jsonapi resources gem](www.github.com/cerebris/jsonapi-resources). This gem is very handy to use and get's you configured for JsonAPI specs in no time. But sometimes, its not clear how to do what you would normally do if you are not using the tool. 
+One of those issues is adding custom fields to the json objects from the ActiveRecords being serialized. I will show you my solution to the this challenge. 
 
 ### Solution 
 Given a user model:
