@@ -1,10 +1,13 @@
 
-# Innarticles.github.io
+# [Innarticles.github.io](http://innarticles.github.io)
 
 
-What you will here:
+What you will find here:
 - My Bio
-- Code Snippets:
+- < Code Snippets />
 - Thoughts. Just Mine
-- Other Random Things that can be
+- Other random things that can be.
 
+What I want to add later:
+- Projects
+- Papers
