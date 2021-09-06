@@ -15,7 +15,7 @@ Retrying fetcher due to error (4/4): Bundler::HTTPError Could not fetch specs fr
 ```
 
 Solution:
-Just restarting your internet will mostly solve this isse.
+Just restarting your internet will mostly solve this issue.
 
 
 
