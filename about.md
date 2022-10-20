@@ -1,32 +1,20 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-I'm called Innocent. For most part - I am. I code. I data. I learn. I live. But I live for the better of others. Not kidding. Its a pattern - my pattern. 
+Over the years, I have led software engineering efforts across health tech. My interest is in building AI applications, primarily in high-impact problems; 
 
-## Code
-- Ruby on Rails - Super comfortable. Can build a CMS in a day!
-- Meteor.js - Got this super comfortable - until React came in. I do reasonable here.
-- Android - For the love of it. 
+I am currently a co-founder and Software Engineering lead at [Ubenwa.ai](https://ubenwa.ai).
+Our aim at Ubenwa is to develop cry-based, low-cost tools for diagnosing conditions affecting newborns' central and autonomic nervous systems early. Our work is funded by generous grants from Mila, Ministère de l’Économie et d’Innovation ([MEI](https://www.economie.gouv.qc.ca/en/)) du Québec, [District 3](http://d3center.ca/) Innovation Centre, and [MIT Solve](https://solve.mit.edu/).
 
-## Data
-- Data Science is it for me.
-- Building products powered by DS is fun and magic - the magic keeps me at it!
-- Second place at the first Machine Hackathon in Nigera. Well the  $$ was good!
-- Co-founder and Software Engineering lead at Ubenwa.com - AI for health diagnostics in a mission to save 1.2m infants deaths  -  [here](ubenwa.com)
-- Data Science Faculty Lead at [Coven Labs](covenlabs.com) - Empowering 10,000 marginalized youth with Data Science skill-sets.
+I was Chief Data Scientist at [Curacel (YC W22)](https://curacel.co): Curacel was founded to create the much-needed infrastructure that will drive insurance inclusion across emerging markets.
 
-## I am 
-- Building Oncenout.com with Rails
+In 2018, I helped kick off nationwide Artificial Intelligence training as the Director of Artificial Intelligence at [Coven Works](https://teckexperts.com/coven-works-launches-ai-school-2270.html). CovenWorks' vision is to get 10,000 youths into Data Science and its related fields. 
 
-## I want to
-- Do more in DS
-- Crack React.js for Metoer.js and Rails
+In 2016, I co-founded and led the engineering team at Oncenout.com(now defunct) as the CTO. The MESTAfrica backed startup aimed to address the issue of fashion waste by encouraging people to trade their unwanted closets through a web application.  
 
-
-
-### Contact me
-
-[inocent@oncenout.com](mailto:innocent@oncenout.com)
+## What's new?
+- Aug 2022: Started a new position as Youth Ambassador at ECOWAS Commission
+- 25 July 2022: We closed a US$2.5M funding round at Ubenwa. See press release and media coverage.
