@@ -15,6 +15,6 @@ Over the years, I have led software engineering efforts across various industrie
 - **Oncenout.com (now defunct):** In 2016, I co-founded and led the engineering team at [Oncenout.com](https://web.archive.org/web/20181130124832/http://www.oncenout.com/) (now defunct). This MESTAfrica-backed startup aimed to tackle fashion waste by encouraging people to trade unwanted clothing items through an intuitive web application.
 
 **What's New?**
-- **ECOWAS Commission:** Starting in August 2022, I have taken on the role of Youth Ambassador at the [ECOWAS Commission](https://www.ecowas.int/).
-- **Funding Round:** On July 25, 2022, we successfully closed a [US$2.5 million press-seed](https://techcabal.com/2022/07/26/ubenwa-raises-2-5m/)  funding round at Ubenwa Health.
+- ECOWAS Commission: Starting in August 2022, I have taken on the role of Youth Ambassador at the [ECOWAS Commission](https://www.ecowas.int/).
+- Funding Round: On July 25, 2022, we successfully closed a [US$2.5 million press-seed](https://techcabal.com/2022/07/26/ubenwa-raises-2-5m/)  funding round at Ubenwa Health.
 
