@@ -16,6 +16,27 @@
   </head>
 
   <body>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" data-theme="light">
+      <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="4"></line>
+          <line x1="12" y1="20" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+          <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="4" y2="12"></line>
+          <line x1="20" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"></line>
+          <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"></line>
+        </svg>
+      </span>
+      <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <path d="M21 15.5A8.5 8.5 0 0 1 8.5 3a8.47 8.47 0 0 0 0 17A8.5 8.5 0 0 0 21 15.5z"></path>
+        </svg>
+      </span>
+    </button>
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -45,6 +66,41 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      (function() {
+        var storageKey = 'theme-preference';
+        var darkClass = 'theme-dark';
+        var body = document.body;
+        var toggle = document.getElementById('theme-toggle');
+        if (!toggle) return;
+
+        function applyTheme(mode) {
+          var isDark = mode === 'dark';
+          body.classList.toggle(darkClass, isDark);
+          toggle.setAttribute('aria-pressed', isDark);
+          toggle.dataset.theme = mode;
+        }
+
+        function getPreferredTheme() {
+          try {
+            var stored = localStorage.getItem(storageKey);
+            if (stored) return stored;
+          } catch (e) {}
+          return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        applyTheme(getPreferredTheme());
+
+        toggle.addEventListener('click', function() {
+          var nextTheme = body.classList.contains(darkClass) ? 'light' : 'dark';
+          applyTheme(nextTheme);
+          try {
+            localStorage.setItem(storageKey, nextTheme);
+          } catch (e) {}
+        });
+      })();
+    </script>
 
     {% include analytics.html %}
   </body>

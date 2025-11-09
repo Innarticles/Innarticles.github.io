@@ -38,7 +38,7 @@ h4,
 h5,
 h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  // color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -295,6 +295,143 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+/*********************/
+/* THEME TOGGLE UI  */
+/*********************/
+
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba($darkGray, 0.2);
+  background: rgba($white, 0.95);
+  color: $darkGray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba($black, 0.15);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  z-index: 1000;
+
+  @include mobile {
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+  }
+
+  &:hover {
+    box-shadow: 0 12px 32px rgba($black, 0.2);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $blue;
+    outline-offset: 2px;
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.theme-toggle__icon {
+  display: none;
+}
+
+.theme-toggle[data-theme="light"] .theme-toggle__icon--moon,
+.theme-toggle[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
+}
+
+.theme-toggle[data-theme="dark"] {
+  background: rgba(#101828, 0.9);
+  border-color: rgba($white, 0.2);
+  color: $white;
+}
+
+/*********************/
+/* DARK THEME STATES */
+/*********************/
+
+body.theme-dark {
+  background: #050608;
+  color: white;
+}
+
+body.theme-dark .wrapper-masthead,
+body.theme-dark .wrapper-footer {
+  background-color: #050608;
+}
+
+body.theme-dark .masthead {
+  border-bottom: 1px solid rgba(230, 237, 243, 0.2);
+}
+
+body.theme-dark .site-name,
+body.theme-dark .site-name a,
+body.theme-dark nav a {
+  color: #f0f6fc;
+}
+
+body.theme-dark .site-description {
+  color: #9ea7b8;
+}
+
+body.theme-dark nav a {
+  color: #c9d1d9;
+}
+
+body.theme-dark nav a:hover,
+body.theme-dark nav a:active {
+  color: #8ab4ff;
+}
+
+body.theme-dark a {
+  color: #8ab4ff;
+}
+
+body.theme-dark a:hover,
+body.theme-dark a:active {
+  color: #c9d1d9;
+}
+
+body.theme-dark .posts > .post {
+  border-bottom-color: rgba(230, 237, 243, 0.15);
+}
+
+body.theme-dark .post blockquote {
+  border-left-color: rgba(138, 180, 248, 0.6);
+  color: #b5c0cf;
+}
+
+body.theme-dark .date {
+  color: #9ba3b4;
+}
+
+body.theme-dark .wrapper-footer {
+  border-top: 1px solid rgba(230, 237, 243, 0.2);
+  border-bottom: 1px solid rgba(230, 237, 243, 0.2);
+}
+
+body.theme-dark footer {
+  color: #c9d1d9;
+}
+
+body.theme-dark img {
+  filter: brightness(0.95) contrast(1.05);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
