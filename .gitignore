@@ -1,0 +1,13 @@
+# Build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Local dependencies
+vendor/bundle/
+.bundle/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
