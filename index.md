@@ -8,14 +8,11 @@ permalink: /
 
 I love science, first-principles thinking, and building things that make technology more useful to people.
 
----
-
 ### Now
 - Building [**Roseline.ai**](https://roseline.ai) — an AI voice agent that helps healthcare organizations automate patient communication and documentation.  
 - **CTO & Co-founder of [Ubenwa Health](https://www.ubenwa.com/)** — using AI to analyze newborn cries for early diagnosis of neurological conditions.  
 - In **2022**, we raised **$2.5M USD** to accelerate our mission of making low-cost diagnostic tools accessible to hospitals worldwide.  
 
----
 
 ### Previously
 - Led AI and data efforts at [**Curacel**](https://curacel.co/) (YC W22), building infrastructure for insurance inclusion across emerging markets.  
@@ -23,7 +20,6 @@ I love science, first-principles thinking, and building things that make technol
 - Co-founded [**Oncenout**](https://web.archive.org/web/20181130124832/http://www.oncenout.com/), a MEST-backed startup tackling fashion waste through peer-to-peer clothing exchange.  
 - Worked with several U.S. companies as a **Senior Software Engineer at Andela**, building and scaling production systems across diverse industries.  
 
----
 
 ### Speaking
 - **Opening Talk:** *Ayiti AI Hackathon 2025* — Haiti.  
@@ -31,7 +27,6 @@ I love science, first-principles thinking, and building things that make technol
 - **TechCabal Townhall:** *How Artificial Intelligence Can Help Your Business Succeed.*  
 - **Fourth Industrial Revolution (ICTEL Expo 2019):** *Challenges in Health in Nigeria and the Role of Technology.*  
 
----
 
 ### Misc
 - When I’m inspired by something, I write about it.  
