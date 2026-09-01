@@ -10,7 +10,8 @@ I love science, first-principles thinking, and building things that make technol
 
 ### Now
 
-- Building [**Roseline.ai**](https://roseline.ai) — an AI voice agent that helps healthcare organizations automate patient communication and documentation.
+- Since **August 2026**, serving as **Fractional Head of Engineering & Products at [Awarri](https://www.awarri.com/)** — leading engineering and product development for African-first AI, including multilingual models, data infrastructure, and locally relevant AI products.
+- Built [**Roseline.ai**](https://roseline.ai) — an AI voice agent that helps healthcare organizations automate patient communication and documentation, now serving over **25,000 calls per month**.
 - Built [**Nanni AI**](https://nanni.ai) — the most advanced AI baby cry translator. Crying is a baby’s first and only language and Nanni AI is here to help understand it. Backed by in-depth scientific research and trusted by renowned institutions and paediatricians all over the world. Used by 500,000+ families across 200+ countries.
 - **CTO & Co-founder of [Ubenwa Health](https://www.ubenwa.ai/)** — using AI to analyze newborn cries for early diagnosis of neurological conditions.
 - In **2022**, we raised **$2.5M USD** to accelerate our mission of making low-cost diagnostic tools accessible to hospitals worldwide.
