@@ -10,8 +10,8 @@ I love science, first-principles thinking, and building things that make technol
 
 ### Now
 
-- **Lead Engineer at Third Factor** — leading engineering strategy and building out products.
-- **Fractional Head of Engineering & Products at [Awarri](https://www.awarri.com/)** — engineering and product leadership for African-first AI, including multilingual models, data infrastructure, and locally relevant AI products.
+- **Lead Engineer at [Third Factor](https://www.thirdfactor.com/)** — leading engineering strategy and building out products, starting with [**PJ**](https://www.thirdfactor.com/meet-pj/), an AI “coach’s coach” that helps managers prepare for and practise real coaching conversations. PJ is built on Third Factor’s 3x4 Coaching Model, which grew out of founder Peter Jensen’s 30+ years developing elite coaches in sport and business, and draws on more than 10,000 coaching conversations. Instead of handing out answers, it coaches through questions, learns from each leader’s own coaching notes, and gives organizations dashboards that show where a coaching culture is actually taking hold.
+- **Fractional Head of Products and Platform at [Awarri](https://www.awarri.com/)** — product and platform leadership for African-first AI, including multilingual models, data infrastructure, and locally relevant AI products.
 - Built [**Roseline.ai**](https://roseline.ai) — an AI voice agent that helps healthcare organizations automate patient communication and documentation, now serving over **25,000 calls per month**.
 - Built [**Nanni AI**](https://nanni.ai) — the most advanced AI baby cry translator. Crying is a baby’s first and only language and Nanni AI is here to help understand it. Backed by in-depth scientific research and trusted by renowned institutions and paediatricians all over the world. Used by 500,000+ families across 200+ countries.
 - **CTO & Co-founder of [Ubenwa Health](https://www.ubenwa.ai/)** — using AI to analyze newborn cries for early diagnosis of neurological conditions.
